@@ -1,2 +1,2 @@
-# notes
-Miscellaneous records of past events and general notes
+# Notes :notebook_with_decorative_cover:
+
