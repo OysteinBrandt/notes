@@ -1,0 +1,49 @@
+# Misc. notes while in Montréal 2024
+ - https://rustconf.com/
+## Nvim (burner laptop setup)
+https://github.com/nvim-lua/kickstart.nvim
+  - note: Must use nightly build of nvim for config to work
+https://rust-analyzer.github.io/manual.html#vimneovim
+  - https://rust-analyzer.github.io/manual.html#rust-analyzer-language-server-binary
+https://shapeshed.com/vim-netrw/
+https://gist.github.com/mengwangk/26acb331e32616979c732121c6efcf87
+https://www.reddit.com/r/neovim/comments/12v8hlz/how_to_customize_netrw/
+
+### init.lua config from burner laptop
+```
+-- Better Netrw
+vim.g.netrw_banner = 0 -- Hide banner
+-- vim.g.netrw_winsize = 25
+-- vim.g.netrw_browse_split = 4 -- Open in previous window
+-- vim.g.netrw_altv = 1 -- Open with right splitting
+-- vim.g.netrw_liststyle = 3 -- Tree-style view
+-- vim.g.netrw_list_hide = (vim.fn['netrw_gitignore#Hide']()) .. [[,\(^\|\s\s\)\zs\.\S\+]] -- use .gitignore
+```
+
+```
+# add to ~/.bashrc
+
+# https://rust-analyzer.github.io/manual.html#rust-analyzer-language-server-binary
+export PATH="~/.local/bin:$PATH"
+
+# Set default editor
+export EDITOR=nvim
+```
+
+
+
+### TODO: Add old vim config?
+E.g. `leader+t` eq to `:Ex` command?
+
+(https://www.nerdfonts.com/)
+
+note: we don't really need this. Instead use the Neovim built in rust-analyzer by enabling it in init.lua
+https://vi.stackexchange.com/questions/43681/simplest-setup-for-nvim-and-rust-and-system-rust-analyzer
+(https://github.com/mrcjkb/rustaceanvim)
+
+note: comment out multiple lines of code (native nvim support in nightly build)
+https://www.reddit.com/r/neovim/comments/1bwlvrt/neovim_now_has_builtin_commenting/
+
+## Tmux
+https://danielmiessler.com/p/tmux/
+

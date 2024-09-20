@@ -1,0 +1,20 @@
+# Workshop - 1 Billion Rows (RustConf 2024)
+How to optimize (buffer and threads) parsing and processing of data from file.
+
+https://github.com/thebracket/RustConf2024
+https://rustconf.com/
+
+```
+cd manual/
+cargo install mdbook
+mdbook build
+mdbook serve
+```
+
+related crates:
+https://crates.io/search?q=rayon
+https://crates.io/search?q=memchr
+https://crates.io/search?q=ureq
+https://crates.io/search?q=reqwest
+https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.fold
+
